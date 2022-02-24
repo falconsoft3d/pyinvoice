@@ -12,15 +12,12 @@ class ChileView(View):
         return super().dispatch(request, *args, **kwargs)
     
     def get(self, request):
-        print("1")
-        print(request)
-        print(request.body)
         if request.body:
             jd = json.loads(request.body)
             datos = {'message': "error"}
         else:
             datos = {
                      'message': "ok", 
-                     "invoice": ""
+                     "invoice": { "Folio" : 0}
                      }
         return JsonResponse(datos)
