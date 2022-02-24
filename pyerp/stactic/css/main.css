@@ -1,0 +1,10 @@
+.box {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+img.col-2{
+    height: 160px;
+}

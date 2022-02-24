@@ -1,4 +1,56 @@
 {% extends "base.html" %}
 {% block contents %}
-   <h1>Pyerp</h1>
+<div class="container">
+  <div class="py-5 text-center">
+      <div class="row">
+          <img class="col-2" src="/chile.png" alt="chile">
+          <img class="col-2" src="/static/peru.png" alt="peru">
+          <img class="col-2" src="/static/argentina.png" alt="argentina">
+          <img class="col-2" src="/static/mexico.png" alt="mexico">
+          <img class="col-2" src="/static/colombia.png" alt="colombia">
+          <img class="col-2" src="/static/bolivia.png" alt="bolivia">
+      </div>
+
+      <h2 style="margin-top:50px;"><strong>PyInvoice</strong></h2>
+      <p class="lead"><strong>PyInvoice</strong> is an project open-source, user-oriented, Electronic bill system
+          based
+          on Python and Flask framework.
+          If you want to help both as an investor, partner or as a developer send me email:
+          <strong>mfalconsoft@gmail.com</strong> or my Phone <strong>+34662470645</strong>
+          <code>.It is in development, it is not finished</code> ,while we will upload videos so you can see our
+          progress.
+      </p>
+  </div>
+  <div style="min-height: 400px;">
+
+      <div style="margin-top:50px;">
+          <h3>Sample response</h3>
+          <p>GET token: <a
+                  href="http://pyinvoice.com/atlantis/get_token"><code>http://pyinvoice.com/atlantis/get_token</code></a>
+          </p>
+          <pre>{
+"token": "atlantis"
+}</pre>
+
+
+          <h3>Python Code</h3>
+          <p>Create File: <code>demo.py</code></p>
+          <pre>import requests
+url = "http://pyinvoice.com/atlantis/get_token"
+r = requests.get(url)
+valor = r.json()
+print(valor.get('token'))</pre>
+      </div>
+
+      <div id="errors" class="row">
+          <div>
+              <h3>Common error responses</h3>
+              <ul>
+                  <li><code>401</code> Your token is not registered</li>
+              </ul>
+          </div>
+      </div>
+
+  </div>
+</div>
 {% endblock %}
