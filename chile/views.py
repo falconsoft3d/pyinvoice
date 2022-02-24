@@ -18,6 +18,6 @@ class ChileView(View):
         else:
             datos = {
                      'message': "ok", 
-                     "invoice": { "Folio" : 0}
+                     "invoice": { "folio" : 0}
                      }
         return JsonResponse(datos)
