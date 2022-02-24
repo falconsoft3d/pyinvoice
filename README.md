@@ -23,6 +23,7 @@ Marlon Falcón Hernández | España | Madrid
 
 # Sign Invoice
 ```
-http://localhost:8000/api/chile/sign
+http://localhost:8000/api/chile/pro/sign
+http://localhost:8000/api/chile/test/sign
 ```
 
