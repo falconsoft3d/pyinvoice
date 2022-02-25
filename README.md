@@ -7,7 +7,9 @@ Django API for electronic invoice for
 
 # Deploy
 ```
+python3 -m venv env
 source env/bin/activate
+pip install -r requirements/local.txt
 python manage.py runserver
 http://localhost:8000
 ```
